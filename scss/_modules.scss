@@ -1,0 +1,112 @@
+@import "variables";
+
+.feature{
+    background-color: $white;
+    height: 400px;
+    margin: 20px 0px;
+}
+
+.btn{
+    color: $brand-color;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
+    &:hover{
+        color: lighten($brand-color, 10%);
+    }
+    &-large{
+       padding: 15px 35px; 
+        background-color:$brand-color;
+        border-radius: 3px;
+        color: $white;
+        font-family: "LatoWeb", sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.9px;
+        &:hover{
+        background-color: darken($brand-color, 15%);
+        color: $white;
+        }
+    }
+    &-circul{
+        padding: 15px 15px;
+        background-color:$brand-color;
+        border-radius: 100px;
+        color: $white;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 0.5;
+        position: absolute;
+        bottom: 25px;
+        right: 25px;
+    
+    &:hover{
+        background-color: darken($brand-color, 15%);
+        color: $white;
+        }}
+}
+
+        .work-item{
+        overflow: hidden;
+        border: 5px solid $body-bg;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            }
+        &:hover {
+	.overlay {
+		opacity: 1;
+	    }
+        }
+
+}
+     
+
+        .overlay {
+		background: linear-gradient(to top, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0));
+		height: 100%;
+		left: 0;
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		@include transition(opacity, .3s);
+        .btn{
+                bottom: 0;
+                position: absolute;
+                right: 0px;
+                padding: 15px;
+             }
+	            
+        &-caption {
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		width: 100%;
+        cursor: default;
+		@include transform(translateY(-50%));
+            h5,p{
+                color: $white;
+            }
+            }}
+
+.social{
+
+    a{
+        height: 35px;
+        width: 35px;
+        margin: 5px;
+        display: inline-block;
+        border-radius: 50px;
+        background-color: $brand-color;
+        color: $white;
+        &:hover{
+            background-color: darken($brand-color, 15%);
+        color: $white;
+        }
+        i{
+            line-height: 2.2;
+        }
+    }
+}

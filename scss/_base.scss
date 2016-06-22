@@ -1,0 +1,39 @@
+@import "variables";
+a {
+    font-weight: $semibold;
+    color: $font-color;
+    @include transition(background-color, color, .3s);
+}
+a:hover, a:focus {
+  	text-decoration: none;
+  	@include transition(background-color, color, .3s);
+    color: lighten($black, 30%)
+}
+body {
+	font-family: $font;
+	font-weight: $normal;
+	color: $font-color;
+    margin: 0 auto;
+    background-color: $body-bg;
+}
+ul, ol {
+	margin: 0;
+	padding: 0;
+}
+ul li {
+	list-style: none;
+}
+.section {
+        padding: 50px 0px 0px;
+}
+.no-padding {
+	padding: 0;
+}
+.no-gutter [class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}

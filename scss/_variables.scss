@@ -1,0 +1,41 @@
+//Colors
+$white: #ffffff;
+$black: #000;
+$font-color: #acacac;
+$nav-color: rgba($white, .75);
+$brand-color: #fdada8;
+$body-bg: lighten($black, 95%);
+
+//Typography
+$font: "LatoWeb", sans-serif;
+$font-secondary: "Open Sans", sans-serif;
+$font-accent: "Cardo", Georgia, 'Times New Roman', serif;
+
+$light: 300;
+$normal: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+$font-size: 18px;
+$h1-font-size: 65px;
+$h2-font-size: 40px;
+$h3-font-size: 28px;
+$h4-font-size: 22px;
+$h5-font-size: 20px;
+$nav-font: 18px;
+
+$line-height: $font-size * 1.5;
+
+// Breakpoints
+$bp-mobiel-S: 320px;
+$bp-mobiel-L: 425px;
+$bp-mobiel-M: 375px;
+$bp-small-2: 480px;
+$bp-small-3: 568px;
+$bp-medium: 640px;
+$bp-tablet: 768px;
+$bp-laptop: 1024px;
+$bp-4k:2560px;
+
+
